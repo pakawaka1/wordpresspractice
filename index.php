@@ -84,19 +84,19 @@
 
 
 
-for($i = 1; $i <= 100; $i++) {
-  if ($i % 3 == 0 && $i % 5 == 0) {
-    echo "FIZZ BUZZ <br>";
-    "<br>";
-  } else if ($i % 3 == 0) {
-    echo "FIZZ <br>";
-    "<br>";
-  } else if ($i % 5 == 0) {
-    echo "BUZZ <br>";
-  } else {
-    echo $i . "<br>";
-  }
-}
+// for($i = 1; $i <= 100; $i++) {
+//   if ($i % 3 == 0 && $i % 5 == 0) {
+//     echo "FIZZ BUZZ <br>";
+//     "<br>";
+//   } else if ($i % 3 == 0) {
+//     echo "FIZZ <br>";
+//     "<br>";
+//   } else if ($i % 5 == 0) {
+//     echo "BUZZ <br>";
+//   } else {
+//     echo $i . "<br>";
+//   }
+// }
 // While loops
 
 // $i = 2;
@@ -109,3 +109,43 @@ for($i = 1; $i <= 100; $i++) {
 // while ($i <= 60) {
 //   echo $i . "<br>";
 //   $i+=6;
+
+// RANDOM NUMBER GENERATOR
+
+//  $randomNumber= rand(1, 100);
+
+//  echo $randomNumber;
+
+
+// $heads = 0;
+// $tails = 0;
+
+// for ($i = 1; $i <= 100; $i++) {
+//   $r = rand(1, 2);
+//   if ($r == 2) {
+//     echo "Tails, I win!<br>";
+//     $tails++;
+//   } else {
+//     echo "Heads, I win Punk!<br>";
+//     $heads++;
+//   }
+// }
+
+// echo "There were " . $tails . "tails and " . $heads . ".";
+
+
+
+// ROUND NUMBER FUNCTION
+
+$radius = 75;
+$area = pi()*pow($radius, 2);
+$rounded = round($area, 2);
+
+echo "The area is " . $rounded . ".";
+ 
+
+
+
+
+
+
