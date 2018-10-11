@@ -135,13 +135,13 @@
 
 
 
-// ROUND NUMBER FUNCTION
+// ROUND NUMBER FUNCTION - USING THE AREA OF CIRCLE
 
-$radius = 75;
-$area = pi()*pow($radius, 2);
-$rounded = round($area, 2);
+// $radius = 5;
+// $area = pi()*pow($radius, 2);
+// $rounded = round($area, 2);
 
-echo "The area is " . $rounded . ".";
+// echo "The area is " . $rounded . ".";
  
 
 
