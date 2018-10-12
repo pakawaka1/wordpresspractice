@@ -6,8 +6,7 @@
   </h1>
 </div>
 
-<?php 
-
+<?php
   // Numberic Equations
 
   // $number1 = 20;
@@ -84,19 +83,19 @@
 
 
 
-for($i = 1; $i <= 100; $i++) {
-  if ($i % 3 == 0 && $i % 5 == 0) {
-    echo "FIZZ BUZZ <br>";
-    "<br>";
-  } else if ($i % 3 == 0) {
-    echo "FIZZ <br>";
-    "<br>";
-  } else if ($i % 5 == 0) {
-    echo "BUZZ <br>";
-  } else {
-    echo $i . "<br>";
-  }
-}
+// for($i = 1; $i <= 100; $i++) {
+//   if ($i % 3 == 0 && $i % 5 == 0) {
+//     echo "FIZZ BUZZ <br>";
+//     "<br>";
+//   } else if ($i % 3 == 0) {
+//     echo "FIZZ <br>";
+//     "<br>";
+//   } else if ($i % 5 == 0) {
+//     echo "BUZZ <br>";
+//   } else {
+//     echo $i . "<br>";
+//   }
+// }
 // While loops
 
 // $i = 2;
@@ -109,3 +108,194 @@ for($i = 1; $i <= 100; $i++) {
 // while ($i <= 60) {
 //   echo $i . "<br>";
 //   $i+=6;
+
+// RANDOM NUMBER GENERATOR
+
+//  $randomNumber= rand(1, 100);
+
+//  echo $randomNumber;
+
+
+// $heads = 0;
+// $tails = 0;
+
+// for ($i = 1; $i <= 100; $i++) {
+//   $r = rand(1, 2);
+//   if ($r == 2) {
+//     echo "Tails, I win!<br>";
+//     $tails++;
+//   } else {
+//     echo "Heads, I win Punk!<br>";
+//     $heads++;
+//   }
+// }
+
+// echo "There were " . $tails . "tails and " . $heads . ".";
+
+
+
+// ROUND NUMBER FUNCTION - USING THE AREA OF CIRCLE
+
+// $radius = 5;
+// $area = pi()*pow($radius, 2);
+// $rounded = round($area, 2);
+
+// echo "The area is " . $rounded . ".";
+ 
+
+//date timezone function
+
+// date_default_timezone_set('America/Tijuana');
+
+// echo "The year is " . date("Y");
+// echo "<br>";
+// echo "Today is " . date('l');
+// echo '<br>';
+// echo "The time is " . date('g:ia');
+
+
+// date_default_timezone_set('America/Tijuana');
+
+// echo date('l jS F Y');
+// echo "<br>";
+// echo "Today is " . date('l') . '.';
+// echo "<br>";
+// echo date('l d F, Y');
+// echo "<br>";
+// echo date('Y/m/d');
+// echo "<br>";
+// echo date('l jS F Y, g:ia');
+// echo '<br>';
+
+// if (date('L') == 1) {
+//   echo date('Y') . ' is a leap year.';
+// } else {
+//   echo date('Y') . '  is not a leap year.';
+// };
+
+// echo '<br>';
+// echo '<br>';
+// 
+
+//     <form action="" method="post">
+//         <input type="text" name="surname">
+//         Male<input type="radio" name="gender" value="Male">
+//         Female<input type="radio" name="gender" value="Female">
+//         Submit<input type="submit" name="Submit">
+
+//     </form>
+// <?php
+
+//   $surname = $_POST['surname'];
+//   $gender = $_POST['gender'];
+
+//   echo 'Your surname is ' . $surname . ' and your gender is ' . $gender . '.';
+
+
+
+// 
+
+// temperature conversion
+
+// <form action="" method="post">
+//         <input type="number" name="temperature">
+//         Celsius<input type="radio" name="celsius" value="celsius">
+//         Fahrenheit<input type="radio" name="fahrenheit" value="fahrenheit">
+//         Submit<input type="submit" name="submit" value="CONVERT">
+
+//     </form>
+// <?php
+
+  // $temp = $_POST['temperature'];
+  // $celsius = $_POST['celsius'];
+  // $fahrenheit = $_POST['fahrenheit'];
+
+  // if ($celsius) {
+  //   $convert = ($temp * 9 / 5 + 32);
+  //   echo 'Your temperature of ' . $temp . ' degrees Celsius is also ' . $convert . ' degrees Fahrenheit';
+  // } else {
+  //   $convert1 = (($temp - 32) * 5/9);
+  //   echo 'Your temperature of ' . $temp . ' degrees Fahrenheit is also ' . $convert1 . '  degrees Celsius';
+  // }
+
+  // if(isset($_POST['submit'])) {
+  //   $temp = $_POST['temperature'];
+  //   $units = $_POST['units'];
+
+  //   if ($units == "celsius") {
+  //     $result = ($temp * 9 / 5 + 32);
+  //   } else {
+  //     $result = (($temp - 32) * 5/9);
+  //   }
+
+  //   echo 'The converted temperature is ' . $result . '.';
+  // }
+
+  // ?>
+
+
+<!-- Word and Sentence Count -->
+
+<!-- <form action="" method="post">
+  <input type="text" name="sentence">
+  Submit<input type="submit" name="submit" value="Find Count">
+</form> -->
+
+
+
+
+ <?php 
+
+    // if(isset($_POST['submit'])) {
+    //   $sentence = $_POST['sentence'];
+    //   $length = strlen($sentence);    
+    //   $words = str_word_count($sentence);
+
+    //   echo "There are " . $length . " characters " . " and " . $words . " words in the sentence " . $sentence . ".";
+    //   }
+
+    // $sentence = "This is a sentence.";
+
+    // $length = strlen($sentence);
+
+    // $words = str_word_count($sentence);
+
+    // echo "The length of the string is " . $length;
+    // echo "<br>";
+    // echo "The word count of this sentence is " . $words;
+
+
+    // String Replacement 
+
+    // $string = "John|Paul|Ringo|George";
+
+    // $newString = str_replace('|', ', ', $string);
+
+    // echo $newString;
+
+    // String Randomizing
+
+        // $string = "I am a leveler.";
+
+        // $newString = str_shuffle($string);
+
+        // echo $newString;
+
+    // String decoding
+
+    
+      // $decode = "Rafher gung lbh orpbzr snzvyvne jvgu cuc shapgvbaf nf gurl ner rkgerzryl hfrshy.";
+
+    
+      // $encoded = str_rot13($decode);
+
+
+      // echo $encoded;
+    ?>
+
+    <?php
+
+       echo "This is Sam's apple! <br>";
+       echo "Sam said, \"Hello, Colin. How's your new PHP course going?\" <br>";
+
+       echo "Sam's mother ordered a new book called \"A Day in My Life\" from her local bookstore.";
