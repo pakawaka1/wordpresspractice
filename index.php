@@ -6,8 +6,7 @@
   </h1>
 </div>
 
-<?php 
-
+<?php
   // Numberic Equations
 
   // $number1 = 20;
@@ -155,7 +154,7 @@
 // echo "The time is " . date('g:ia');
 
 
-date_default_timezone_set('America/Tijuana');
+// date_default_timezone_set('America/Tijuana');
 
 echo date('l jS F Y');
 echo "<br>";
@@ -174,3 +173,25 @@ if (date('L') == 1) {
   echo date('Y') . '  is not a leap year.';
 };
 
+echo '<br>';
+echo '<br>';
+?>
+
+    <form action="" method="post">
+        <input type="text" name="surname">
+        Male<input type="radio" name="gender" value="Male">
+        Female<input type="radio" name="gender" value="Female">
+        Submit<input type="submit" name="Submit">
+
+    </form>
+<?php
+
+
+  $surname = $_POST['surname'];
+  $gender = $_POST['gender'];
+
+  echo 'Your surname is ' . $surname . ' and your gender is ' . $gender . '.';
+
+
+
+?>
