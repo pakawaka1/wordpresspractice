@@ -144,8 +144,33 @@
 // echo "The area is " . $rounded . ".";
  
 
+//date timezone function
+
+// date_default_timezone_set('America/Tijuana');
+
+// echo "The year is " . date("Y");
+// echo "<br>";
+// echo "Today is " . date('l');
+// echo '<br>';
+// echo "The time is " . date('g:ia');
 
 
+date_default_timezone_set('America/Tijuana');
 
+echo date('l jS F Y');
+echo "<br>";
+echo "Today is " . date('l') . '.';
+echo "<br>";
+echo date('l d F, Y');
+echo "<br>";
+echo date('Y/m/d');
+echo "<br>";
+echo date('l jS F Y, g:ia');
+echo '<br>';
 
+if (date('L') == 1) {
+  echo date('Y') . ' is a leap year.';
+} else {
+  echo date('Y') . '  is not a leap year.';
+};
 
