@@ -348,44 +348,125 @@
 
 <!-- ISBN Number Check Form -->
 
-<form action="isbn-process-php" method="post">
+<!-- <form action="isbn-process-php" method="post">
     <input type="text" name="isbn">
     Submit<input type="submit" name="submit" value="Check ISBN">
-</form> 
+</form>  -->
+
 
 <?php
 
-// check if form submitted
+// // check if form submitted
 
-if(isset($_POST['submit'])) {
+// if(isset($_POST['submit'])) {
 
-  // post assign variables
+//   // post assign variables
 
-  $isbn = $_POST['isbn'];
+//   $isbn = $_POST['isbn'];
 
-  //  total, incrementor
+//   //  total, incrementor
 
-  $total = 0;
-  $i = 1;
+//   $total = 0;
+//   $i = 1;
 
-  // split the string
+//   // split the string
 
-  $digits = str_split($isbn);
+//   $digits = str_split($isbn);
 
-  // loop through the array
+//   // loop through the array
 
-  foreach($digits as $digit) {
+//   foreach($digits as $digit) {
 
-    // update total = digit * 1, 2, 3, etc.
-    $total += $digit * $i;
-    $i++;
-  }
-  // check if divisible by 11
-  if($total % 11 == 0) {
-    echo "This ISBN is valid";
-  } else {
-    echo "This ISBN IS NO BUENO!";
-  }
-}
-  // echo message
+//     // update total = digit * 1, 2, 3, etc.
+//     $total += $digit * $i;
+//     $i++;
+//     var_dump($digit);
+//   }
+//   // check if divisible by 11
+//   if($total % 11 == 0) {
+//     echo "This ISBN is valid";
+//   } else {
+//     echo "This ISBN IS NO BUENO!";
+//   }
+// }
+//   // echo message
+// 
 ?>
+
+
+
+<?php
+
+// // Bad Word Replacement
+
+// // Start with the string 
+
+// $string = "I love this website but feel that the stupid fucking comments are detracting from the user experience. The person who wrote this must be fucking stupid.";
+
+// // create the array of badwords you want to replace
+
+// $badWords = array("shit", "fuck", "stupid");
+
+// // loop through the array 
+
+// foreach($badWords as $badWord){
+
+//   // replace the $badwords in the array with asterisks
+
+//   $string = str_replace($badWord, "********", $string);
+// }
+
+// // print the edited string 
+// echo $string;
+
+?>
+<?php
+
+// Sorting data in an array in PHP
+
+// $words = ['Shit', 'Piss', 'Smegma', 'Fuck'];
+
+// sort($words);
+
+// echo "<ol>";
+
+// foreach($words as $word) {
+//   echo "<li>" . $word . "</li>";
+// }
+
+
+// echo "</ol>";
+
+
+//  Exploding and Imploding Strings 
+
+// $string = 'John, Sally, Ben, Jerry, Ice Cream';
+
+// $names = explode(', ', $string);
+
+// echo '<pre>';
+// print_r($names);
+
+// $imploded = implode('|', $names);
+
+// echo '<pre>';
+// print_r($imploded);
+
+// Adding Elements to an Array
+
+$cities = ['Paris', 'London', 'New York'];
+
+echo '<pre>';
+print_r($cities);
+
+array_push($cities,'Los Angeles', 'San Francisco'); //push moves the items to the end of the array
+
+print_r($cities);
+
+array_unshift($cities, 'Amsterdam', 'Dublin'); //unshift moves the new items to the front of the array
+
+print_r($cities);
+
+
+
+
