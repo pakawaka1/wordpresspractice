@@ -63,7 +63,7 @@
   // if ($a % 3 == 0) {
   //   echo "number is a multiple of 3";
   // } else if ($a % 4 == 0) {
-  //   echo "number is multiple of 4";
+  //   echo "number is multiple of 4"; 
   // } else if ($a % 5 == 0) {
   //   echo "number is a multiple of 5";
   // } else {
@@ -291,11 +291,182 @@
 
 
       // echo $encoded;
-    ?>
+   ?>
 
-    <?php
+   <?php
 
-       echo "This is Sam's apple! <br>";
-       echo "Sam said, \"Hello, Colin. How's your new PHP course going?\" <br>";
+     //  echo "This is Sam's apple! <br>";
+     //  echo "Sam said, \"Hello, Colin. How's your new PHP course going?\" <br>";
 
-       echo "Sam's mother ordered a new book called \"A Day in My Life\" from her local bookstore.";
+    //   echo "Sam's mother ordered a new book called \"A Day in My Life\" from her local bookstore.";
+    
+
+    // // Arrays Practice
+    
+    // $names = array('Mary', 'James', 'Joseph', 'SLayer');
+    
+    // echo "<pre>";
+    // print_r($names);
+
+    // $cities = ['London', 'Paris', 'London'];
+
+    // print_r($cities);
+
+    // $mixed = [5, 'mixed', "John", -3];
+
+    // print_r($mixed);
+
+    // //  Looping through Arrays
+
+    // $names = array('Mary', 'James', 'Joseph', 'SLayer');
+
+    // echo "<ol>";
+
+    // foreach($names as $name) {
+    //   echo "<li>" . $name . "</li>";
+    // }
+
+    // echo "</ol>";
+
+    // How to Split a String and Place Into An Array in PHP
+
+    // $word = "Christmas";
+
+    // $letter= str_split($word, 2);  //sprit into sections of 2
+
+    // $letters = str_split($word, 3);  //sprit into sections of 3
+
+    // $letterss = str_split($word, 4);  //sprit into sections of 4
+
+
+
+    // echo "<pre>";
+    // print_r ($letter);
+    // print_r ($letters);
+    // print_r ($letterss);
+?>
+
+<!-- ISBN Number Check Form -->
+
+<!-- <form action="isbn-process-php" method="post">
+    <input type="text" name="isbn">
+    Submit<input type="submit" name="submit" value="Check ISBN">
+</form>  -->
+
+
+<?php
+
+// // check if form submitted
+
+// if(isset($_POST['submit'])) {
+
+//   // post assign variables
+
+//   $isbn = $_POST['isbn'];
+
+//   //  total, incrementor
+
+//   $total = 0;
+//   $i = 1;
+
+//   // split the string
+
+//   $digits = str_split($isbn);
+
+//   // loop through the array
+
+//   foreach($digits as $digit) {
+
+//     // update total = digit * 1, 2, 3, etc.
+//     $total += $digit * $i;
+//     $i++;
+//     var_dump($digit);
+//   }
+//   // check if divisible by 11
+//   if($total % 11 == 0) {
+//     echo "This ISBN is valid";
+//   } else {
+//     echo "This ISBN IS NO BUENO!";
+//   }
+// }
+//   // echo message
+// 
+?>
+
+
+
+<?php
+
+// // Bad Word Replacement
+
+// // Start with the string 
+
+// $string = "I love this website but feel that the stupid fucking comments are detracting from the user experience. The person who wrote this must be fucking stupid.";
+
+// // create the array of badwords you want to replace
+
+// $badWords = array("shit", "fuck", "stupid");
+
+// // loop through the array 
+
+// foreach($badWords as $badWord){
+
+//   // replace the $badwords in the array with asterisks
+
+//   $string = str_replace($badWord, "********", $string);
+// }
+
+// // print the edited string 
+// echo $string;
+
+?>
+<?php
+
+// Sorting data in an array in PHP
+
+// $words = ['Shit', 'Piss', 'Smegma', 'Fuck'];
+
+// sort($words);
+
+// echo "<ol>";
+
+// foreach($words as $word) {
+//   echo "<li>" . $word . "</li>";
+// }
+
+
+// echo "</ol>";
+
+
+//  Exploding and Imploding Strings 
+
+// $string = 'John, Sally, Ben, Jerry, Ice Cream';
+
+// $names = explode(', ', $string);
+
+// echo '<pre>';
+// print_r($names);
+
+// $imploded = implode('|', $names);
+
+// echo '<pre>';
+// print_r($imploded);
+
+// Adding Elements to an Array
+
+$cities = ['Paris', 'London', 'New York'];
+
+echo '<pre>';
+print_r($cities);
+
+array_push($cities,'Los Angeles', 'San Francisco'); //push moves the items to the end of the array
+
+print_r($cities);
+
+array_unshift($cities, 'Amsterdam', 'Dublin'); //unshift moves the new items to the front of the array
+
+print_r($cities);
+
+
+
+
