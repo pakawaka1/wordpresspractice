@@ -454,19 +454,100 @@
 
 // Adding Elements to an Array
 
-$cities = ['Paris', 'London', 'New York'];
+// $cities = ['Paris', 'London', 'New York'];
+
+// echo '<pre>';
+// print_r($cities);
+
+// array_push($cities,'Los Angeles', 'San Francisco'); //push moves the items to the end of the array
+
+// print_r($cities);
+
+// array_unshift($cities, 'Amsterdam', 'Dublin'); //unshift moves the new items to the front of the array
+
+// print_r($cities);
+
+// PRACTICE 
+
+// $cities = ["London", "Paris", "Amsterdam", "New York", "Berlin", "Brisbane"];
+// sort($cities);
+
+// echo "<ol>";
+
+// foreach($cities as $city) {
+//   echo "<li>" . $city . "</li>";
+// }
+
+// echo "</ol>";
+// array_push($cities, "Sydney", "Helsinki", "Beijing", "Dublin", "Rome" );
+
+
+// sort($cities);
+
+// echo "<ol>";
+
+
+// foreach($cities as $city) {
+//   echo "<li>" . $city . "</li>";
+// }
+
+
+// echo "</ol>";
+
+// Removing an element from the beginning/end of an array
+
+
+$cities = ["London", "Paris", "Amsterdam", "New York", "Berlin", "Brisbane"];
+
+$lastCity = array_pop($cities); // removes the last element from the array 
+
+echo $lastCity;
+
+echo '<br>';
+
+
+echo '<ol>';
+
+foreach($cities as $city) {
+  echo "<li>" . $city . "</li>";
+}
+
+echo '</ol>';
+
+echo '<br>';
+
+sort($cities);
+
+
+$firstcity = array_shift($cities); // removes the first element from the array 
+
+
+echo '<ol>';
+
+foreach($cities as $city) {
+  echo "<li>" . $city . "</li>";
+}
+
+echo '</ol>';
+
+echo '<br>';
+
+//splitting an array
+
+$cities = ["London", "Paris", "Amsterdam", "New York", "Berlin", "Brisbane"];
+
+$result = array_slice($cities, 2);  //removes the first two elements of array
 
 echo '<pre>';
-print_r($cities);
+print_r($result);
 
-array_push($cities,'Los Angeles', 'San Francisco'); //push moves the items to the end of the array
+$result = array_slice($cities, 0, 4); // only adds for the first 4 values of the array
 
-print_r($cities);
-
-array_unshift($cities, 'Amsterdam', 'Dublin'); //unshift moves the new items to the front of the array
-
-print_r($cities);
+echo '<pre>';
+print_r($result);
 
 
+$result = array_slice($cities, -3, 3); // prints the last three elements of an arrayccc
 
-
+echo '<pre>';
+print_r($result);
