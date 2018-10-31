@@ -552,21 +552,71 @@
 // echo '<pre>';
 // print_r($result);
 
+// ASSOCIATIVE ARRAYS
 
-$capitals = array(
-  "Italy" => "Rome", "Luxembourg" => "Luxembourg", "Belgium" => "Brussels",
-  "Denmark" => "Copenhagen", "Finland" => "Helsinki", "France" => "Paris",
-  "Slovakia" => "Bratislava", "Slovenia" => "Ljubljana", "Germany" => "Berlin",
-  "Greece" => "Athens", "Ireland" => "Dublin", "Netherlands" => "Amsterdam",
-  "Portugal" => "Lisbon", "Spain" => "Madrid", "Sweden" => "Stockholm", "United
-Kingdom" => "London", "Cyprus" => "Nicosia", "Lithuania" => "Vilnius", "Czech
-Republic" => "Prague", "Estonia" => "Tallin", "Hungary" => "Budapest",
-  "Latvia" => "Riga", "Malta" => "Valetta", "Austria" => "Vienna",
-  "Poland" => "Warsaw"
-);
+// $capitals = array(
+//   "Italy" => "Rome", "Luxembourg" => "Luxembourg", "Belgium" => "Brussels",
+//   "Denmark" => "Copenhagen", "Finland" => "Helsinki", "France" => "Paris",
+//   "Slovakia" => "Bratislava", "Slovenia" => "Ljubljana", "Germany" => "Berlin",
+//   "Greece" => "Athens", "Ireland" => "Dublin", "Netherlands" => "Amsterdam",
+//   "Portugal" => "Lisbon", "Spain" => "Madrid", "Sweden" => "Stockholm", "United
+// Kingdom" => "London", "Cyprus" => "Nicosia", "Lithuania" => "Vilnius", "Czech
+// Republic" => "Prague", "Estonia" => "Tallin", "Hungary" => "Budapest",
+//   "Latvia" => "Riga", "Malta" => "Valetta", "Austria" => "Vienna",
+//   "Poland" => "Warsaw"
+// );
 
-asort($capitals);
+// asort($capitals);
 
-foreach ($capitals as $country => $city) {
-  echo 'The capital city of ' . $country . 'is ' . $city . '<br>';
+// foreach ($capitals as $country => $city) {
+//   echo 'The capital city of ' . $country . ' is ' . $city . '<br>';
+// }
+
+// FUNCTIONS
+
+// function hello()
+// {
+//   echo "Hello World!";
+// };
+
+// hello();
+
+// function multiply($number1, $number2)
+// {
+//   $result = $number1 * $number2;
+//   echo $result;
+// };
+
+// multiply(12, 5);
+
+// echo '<br>';
+
+// multiply(13, 324234);
+
+// REMEMBER YOU ONLY CAN RETURN A SINGLE VALUE FROM A FUNCTION
+
+// function uppercase($name1, $name2)
+// {
+//   $result1 = strtolower($name1);
+//   $result2 = strtolower($name2);
+//   return $result1;
+//   return $result2;
+
+// }
+
+// echo uppercase("Smith", "Jones");
+
+// BUT HERE WE CAN RETURN MORE THAN ONE VALUE IN A FUNCTION
+
+function calculate($number1, $number2)
+{
+  $add = $number1 + $number2;
+  $subtract = $number1 - $number2;
+  return array($add, $subtract);
 }
+
+$results = calculate(10, 3);
+
+echo $results[0];
+echo '<br>';
+echo $results[1];
