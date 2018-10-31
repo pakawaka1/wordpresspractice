@@ -291,7 +291,7 @@
 
 
       // echo $encoded;
-   ?>
+?>
 
    <?php
 
@@ -344,7 +344,7 @@
     // print_r ($letter);
     // print_r ($letters);
     // print_r ($letterss);
-?>
+  ?>
 
 <!-- ISBN Number Check Form -->
 
@@ -497,57 +497,76 @@
 // Removing an element from the beginning/end of an array
 
 
-$cities = ["London", "Paris", "Amsterdam", "New York", "Berlin", "Brisbane"];
+// $cities = ["London", "Paris", "Amsterdam", "New York", "Berlin", "Brisbane"];
 
-$lastCity = array_pop($cities); // removes the last element from the array 
+// $lastCity = array_pop($cities); // removes the last element from the array 
 
-echo $lastCity;
+// echo $lastCity;
 
-echo '<br>';
+// echo '<br>';
 
 
-echo '<ol>';
+// echo '<ol>';
 
-foreach($cities as $city) {
-  echo "<li>" . $city . "</li>";
+// foreach($cities as $city) {
+//   echo "<li>" . $city . "</li>";
+// }
+
+// echo '</ol>';
+
+// echo '<br>';
+
+// sort($cities);
+
+
+// $firstcity = array_shift($cities); // removes the first element from the array 
+
+
+// echo '<ol>';
+
+// foreach($cities as $city) {
+//   echo "<li>" . $city . "</li>";
+// }
+
+// echo '</ol>';
+
+// echo '<br>';
+
+// //splitting an array
+
+// $cities = ["London", "Paris", "Amsterdam", "New York", "Berlin", "Brisbane"];
+
+// $result = array_slice($cities, 2);  //removes the first two elements of array
+
+// echo '<pre>';
+// print_r($result);
+
+// $result = array_slice($cities, 0, 4); // only adds for the first 4 values of the array
+
+// echo '<pre>';
+// print_r($result);
+
+
+// $result = array_slice($cities, -3, 3); // prints the last three elements of an arrayccc
+
+// echo '<pre>';
+// print_r($result);
+
+
+$capitals = array(
+  "Italy" => "Rome", "Luxembourg" => "Luxembourg", "Belgium" => "Brussels",
+  "Denmark" => "Copenhagen", "Finland" => "Helsinki", "France" => "Paris",
+  "Slovakia" => "Bratislava", "Slovenia" => "Ljubljana", "Germany" => "Berlin",
+  "Greece" => "Athens", "Ireland" => "Dublin", "Netherlands" => "Amsterdam",
+  "Portugal" => "Lisbon", "Spain" => "Madrid", "Sweden" => "Stockholm", "United
+Kingdom" => "London", "Cyprus" => "Nicosia", "Lithuania" => "Vilnius", "Czech
+Republic" => "Prague", "Estonia" => "Tallin", "Hungary" => "Budapest",
+  "Latvia" => "Riga", "Malta" => "Valetta", "Austria" => "Vienna",
+  "Poland" => "Warsaw"
+);
+
+asort($capitals);
+
+foreach ($capitals as $country => $city) {
+  echo 'The capital city of ' . $country . 'is ' . $city . '<br>';
 }
-
-echo '</ol>';
-
-echo '<br>';
-
-sort($cities);
-
-
-$firstcity = array_shift($cities); // removes the first element from the array 
-
-
-echo '<ol>';
-
-foreach($cities as $city) {
-  echo "<li>" . $city . "</li>";
-}
-
-echo '</ol>';
-
-echo '<br>';
-
-//splitting an array
-
-$cities = ["London", "Paris", "Amsterdam", "New York", "Berlin", "Brisbane"];
-
-$result = array_slice($cities, 2);  //removes the first two elements of array
-
-echo '<pre>';
-print_r($result);
-
-$result = array_slice($cities, 0, 4); // only adds for the first 4 values of the array
-
-echo '<pre>';
-print_r($result);
-
-
-$result = array_slice($cities, -3, 3); // prints the last three elements of an arrayccc
-
-echo '<pre>';
-print_r($result);
